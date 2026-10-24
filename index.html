@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Adelia Rizki Eka Putri — Portfolio Archive</title>
+  <meta name="description" content="Portfolio of Adelia Rizki Eka Putri — Business Information Systems, UI/UX Designer, and System Analyst at Politeknik Negeri Malang.">
+  <meta name="author" content="Adelia Rizki Eka Putri">
+
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Configuration verbatim -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#fdfae1",
+            "on-secondary-container": "#755900",
+            "on-primary-fixed-variant": "#304e2d",
+            "on-surface-variant": "#434840",
+            "on-background": "#1c1c0d",
+            "on-surface": "#1c1c0d",
+            "surface-dim": "#dedbc3",
+            "on-tertiary-fixed-variant": "#7e2a28",
+            "primary-fixed-dim": "#add0a5",
+            "secondary-fixed": "#ffdf95",
+            "inverse-on-surface": "#f5f2d9",
+            "surface-bright": "#fdfae1",
+            "inverse-surface": "#323121",
+            "secondary": "#765a00",
+            "tertiary-container": "#de736d",
+            "surface-container": "#f2efd6",
+            "tertiary-fixed": "#ffdad7",
+            "surface-container-low": "#f8f4db",
+            "on-primary": "#ffffff",
+            "surface": "#fdfae1",
+            "tertiary": "#9d413e",
+            "surface-container-high": "#ece9d0",
+            "tertiary-fixed-dim": "#ffb3ae",
+            "on-tertiary-container": "#590e10",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#476643",
+            "secondary-container": "#fed262",
+            "on-primary-fixed": "#042106",
+            "primary-container": "#7a9b74",
+            "on-secondary-fixed-variant": "#594400",
+            "on-secondary-fixed": "#251a00",
+            "secondary-fixed-dim": "#ecc153",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed": "#410004",
+            "primary": "#476643",
+            "on-primary-container": "#153114",
+            "surface-container-highest": "#e6e3cb",
+            "surface-container-lowest": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface-variant": "#e6e3cb",
+            "inverse-primary": "#add0a5",
+            "primary-fixed": "#c9ecc0",
+            "outline-variant": "#c3c8bd",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "outline": "#73796f"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "margin": "2.5rem",
+            "margin-mobile": "1.25rem",
+            "space-2xl": "4rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Space Mono", "monospace"],
+            "display-xl-mobile": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "body-lg": ["Space Mono", "monospace"],
+            "label-sm": ["Space Mono", "monospace"],
+            "body-sm": ["Space Mono", "monospace"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "label-lg": ["Space Mono", "monospace"],
+            "display-xl": ["Playfair Display", "serif"],
+            "body-md": ["Space Mono", "monospace"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"]
+          },
+          "fontSize": {
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "400" }],
+            "display-xl-mobile": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-lg": ["1.0625rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.4rem", "fontWeight": "400" }],
+            "headline-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "fontWeight": "600" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "display-xl": ["5rem", { "lineHeight": "5.5rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "headline-sm": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "500" }],
+            "headline-md": ["2rem", { "lineHeight": "2.5rem", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background text-on-surface font-body-md text-body-md min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+  <!-- ================= TOP NAVIGATION BAR (Anchored Shared Component) ================= -->
+  <header class="docked full-width top-0 sticky z-50 border-b border-outline-variant bg-surface/95 backdrop-blur-sm shadow-sm transition-all">
+    <div class="w-full px-space-md md:px-margin max-w-7xl mx-auto flex justify-between items-center py-space-sm">
+      
+      <!-- Brand Logo / Badge -->
+      <a class="flex items-center gap-2 group" href="#hero">
+        <div class="bg-secondary-container text-on-secondary-fixed px-3 py-1.5 rounded-lg border border-on-surface flex items-center gap-2 shadow-[2px_2px_0px_#1c1c0d] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-[1px_1px_0px_#1c1c0d] transition-all">
+          <span class="font-label-lg text-label-lg font-bold">Archive</span>
+          <span class="text-base">🗂️</span>
+        </div>
+        <div class="hidden sm:flex flex-col">
+          <span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface leading-tight font-bold">Adelia Rizki Eka Putri</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">BIS &amp; UI/UX Design</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a class="border-b-2 border-secondary text-secondary font-label-md font-bold pb-1 flex items-center gap-1.5 transition-colors" href="#hero" id="nav-home">
+          <span class="material-symbols-outlined text-[18px]">home</span>
+          <span>Home</span>
+        </a>
+        <a class="text-on-surface-variant font-label-md hover:text-on-surface transition-colors pb-1 flex items-center gap-1.5" href="#about" id="nav-about">
+          <span class="material-symbols-outlined text-[18px]">account_circle</span>
+          <span>About</span>
+        </a>
+        <a class="text-on-surface-variant font-label-md hover:text-on-surface transition-colors pb-1 flex items-center gap-1.5" href="#projects" id="nav-projects">
+          <span class="material-symbols-outlined text-[18px]">folder_open</span>
+          <span>Projects</span>
+        </a>
+        <a class="text-on-surface-variant font-label-md hover:text-on-surface transition-colors pb-1 flex items-center gap-1.5" href="#contact" id="nav-contact">
+          <span class="material-symbols-outlined text-[18px]">alternate_email</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <!-- Trailing Action Badges & Primary Button -->
+      <div class="flex items-center gap-3">
+        <!-- Social Circle Badges mimicking vintage desk seals -->
+        <div class="hidden lg:flex items-center gap-2">
+          <a class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container border border-on-surface flex items-center justify-center hover:scale-105 shadow-[1px_1px_0px_#1c1c0d] transition-transform" href="https://github.com/adeliarztr" rel="noopener" target="_blank" title="GitHub Repository">
+            <span class="material-symbols-outlined text-sm">code</span>
+          </a>
+          <a class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container border border-on-surface flex items-center justify-center hover:scale-105 shadow-[1px_1px_0px_#1c1c0d] transition-transform" href="mailto:adeliarizkiekaputr@gmail.com" title="Direct Email">
+            <span class="material-symbols-outlined text-sm">alternate_email</span>
+          </a>
+          <a class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed border border-on-surface flex items-center justify-center font-label-sm font-bold hover:scale-105 shadow-[1px_1px_0px_#1c1c0d] transition-transform" href="https://www.linkedin.com/in/adelia-rizki-eka-putri-b074b0446/" rel="noopener" target="_blank" title="LinkedIn Profile">
+            in
+          </a>
+        </div>
+
+        <!-- Trailing Primary Action button from JSON -->
+        <a class="px-5 py-2 rounded-full border border-on-surface bg-surface-container-lowest text-on-surface font-label-md font-bold shadow-[2px_2px_0px_#1c1c0d] hover:bg-surface-container hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 active:translate-y-0.5 transition-all" href="#contact">
+          Get in Touch
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden p-2 rounded-lg border border-on-surface bg-surface-container shadow-[2px_2px_0px_#1c1c0d] text-on-surface flex items-center justify-center" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+          <span class="material-symbols-outlined text-xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface-container-low px-6 py-4 space-y-3 shadow-md">
+      <div class="flex flex-col gap-2 font-label-md">
+        <a class="py-2 px-3 rounded hover:bg-secondary-container flex items-center gap-2 border border-transparent hover:border-on-surface font-bold text-on-surface" href="#hero" onclick="closeMobileMenu()">
+          <span class="material-symbols-outlined text-[18px]">home</span> Home
+        </a>
+        <a class="py-2 px-3 rounded hover:bg-secondary-container flex items-center gap-2 border border-transparent hover:border-on-surface font-bold text-on-surface" href="#about" onclick="closeMobileMenu()">
+          <span class="material-symbols-outlined text-[18px]">account_circle</span> About Me
+        </a>
+        <a class="py-2 px-3 rounded hover:bg-secondary-container flex items-center gap-2 border border-transparent hover:border-on-surface font-bold text-on-surface" href="#projects" onclick="closeMobileMenu()">
+          <span class="material-symbols-outlined text-[18px]">folder_open</span> Projects Archive
+        </a>
+        <a class="py-2 px-3 rounded hover:bg-secondary-container flex items-center gap-2 border border-transparent hover:border-on-surface font-bold text-on-surface" href="#contact" onclick="closeMobileMenu()">
+          <span class="material-symbols-outlined text-[18px]">alternate_email</span> Contact &amp; Inquiry
+        </a>
+      </div>
+      <div class="pt-2 border-t border-outline-variant flex items-center gap-3">
+        <a class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container border border-on-surface font-label-sm font-bold flex items-center gap-1" href="https://github.com/adeliarztr" target="_blank">
+          <span class="material-symbols-outlined text-sm">code</span> GitHub
+        </a>
+        <a class="px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed border border-on-surface font-label-sm font-bold flex items-center gap-1" href="https://www.linkedin.com/in/adelia-rizki-eka-putri-b074b0446/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT CANVAS ================= -->
+  <main class="w-full max-w-7xl mx-auto px-space-md md:px-margin pt-8 pb-16 space-y-20">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative pt-4 lg:pt-8" id="hero">
+      <!-- Ambient Archival Dossier Canvas Container -->
+      <div class="relative bg-primary-container/85 border border-on-surface rounded-2xl p-6 sm:p-10 lg:p-14 shadow-[4px_4px_0px_#1c1c0d] overflow-hidden bg-graph-paper">
+        
+        <!-- Physical Notebook Top Hole-Punches for tactile feel -->
+        <div class="hidden sm:flex justify-around absolute top-3 left-0 right-0 px-12 pointer-events-none opacity-60">
+          <div class="binder-ring"></div>
+          <div class="binder-ring"></div>
+          <div class="binder-ring"></div>
+          <div class="binder-ring"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-6 pt-4">
+          <!-- Status Pill Stamp Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-on-surface bg-background text-on-surface shadow-[1px_1px_0px_#1c1c0d] -rotate-1">
+            <span class="material-symbols-outlined text-tertiary text-sm">schedule</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Available for Work &amp; System Analysis</span>
+          </div>
+
+          <!-- Main Serif Headline -->
+          <h1 class="font-display-xl text-4xl sm:text-6xl lg:text-display-xl text-on-surface tracking-tight leading-none drop-shadow-sm font-semibold">
+            Adelia Rizki Eka Putri
+          </h1>
+
+          <!-- Role Subtitle & Monospace Manifesto -->
+          <div class="space-y-3">
+            <p class="font-label-lg text-label-lg text-on-primary-container font-bold tracking-wide">
+              Business Information Systems • UI/UX Designer • System Analyst
+            </p>
+            <p class="font-body-md text-body-md text-on-surface max-w-2xl mx-auto leading-relaxed">
+              Bridging design and technology to craft intuitive digital experiences and structured systems. Turning complex business logic into tactile, usable software interfaces.
+            </p>
+          </div>
+
+          <!-- Hero Action Pill Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <a class="px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface border border-on-surface font-label-md font-bold shadow-[2px_2px_0px_#1c1c0d] hover:bg-secondary-fixed transition-all flex items-center gap-2 hover:translate-x-0.5 hover:translate-y-0.5" href="#projects">
+              <span class="material-symbols-outlined text-lg">folder_open</span>
+              Explore Projects
+            </a>
+            <a class="px-6 py-3 rounded-full bg-secondary-container text-on-secondary-fixed border border-on-surface font-label-md font-bold shadow-[2px_2px_0px_#1c1c0d] hover:brightness-105 transition-all flex items-center gap-2 hover:translate-x-0.5 hover:translate-y-0.5" href="#contact">
+              <span class="material-symbols-outlined text-lg">send</span>
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Fanned Magazine / Project Dossier Previews -->
+        <div class="mt-12 pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          
+          <!-- Card 1: Website LAB IVSS -->
+          <div class="group relative bg-background border border-on-surface rounded-lg p-3 shadow-[2px_2px_0px_#1c1c0d] hover:-translate-y-2 hover:rotate-1 transition-all duration-200 cursor-pointer" onclick="openProjectModal(1)">
+            <!-- Washi tape pin -->
+            <div class="absolute -top-3 left-6 w-12 h-5 washi-tape -rotate-6 z-10 border border-outline/30"></div>
+            <div class="aspect-[4/5] bg-surface-container border border-outline-variant rounded overflow-hidden relative mb-2">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYENMECs0y_jyUX4N2XGlv3NeCdAV79C3o1hMmkU140ioV5PddsEtVpGW5poP8HegcDTxMMdtZ_GVVNWLWRKIzPpMuTDxKZi33vSb6Mw8jYbwv_y0r9-nt0xLm-asvA8_rQz8DpXZxXJZkrh2c3jw9dn_fOkBwO8niUJ1BQW7HjBZ_WvfgfhU6Om6FWa96znQvjWfrLvcxgZPVFwVeKihw7rE-CH26oue9aSTbSgC2nDE3cx2dwi7w69rVHkJ23W_cQkwTsQxwEQLUw" 
+                   alt="Website LAB IVSS web profile interface"
+                   onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-3 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-3xl text-primary\'>terminal</span><span class=\'font-bold text-xs\'>Website LAB IVSS</span></div>';">
+            </div>
+            <div class="flex justify-between items-center text-on-surface">
+              <span class="font-label-sm text-label-sm font-bold">Website LAB IVSS</span>
+              <span class="font-label-sm text-label-sm text-outline">01 / WEB</span>
+            </div>
+          </div>
+
+          <!-- Card 2: MOYA App -->
+          <div class="group relative bg-background border border-on-surface rounded-lg p-3 shadow-[2px_2px_0px_#1c1c0d] hover:-translate-y-2 hover:-rotate-1 transition-all duration-200 cursor-pointer" onclick="openProjectModal(2)">
+            <!-- Washi tape pin -->
+            <div class="absolute -top-3 right-6 w-12 h-5 washi-tape-maroon rotate-3 z-10 border border-outline/30"></div>
+            <div class="aspect-[4/5] bg-surface-container border border-outline-variant rounded overflow-hidden relative mb-2">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuARmeF2YvzAghb5EAVExDwzrWsY6DJqJhfGGPhSc3lcx_W5JVxDnzGQ3oCeZ8IwBWwws0M_J0pFS8wlQAqAqTYMI8rf7A3vF3w79OspI1hmTZMzkS2Cw6oibqIZ2ITX6LR74w2DQz0WirVZSHPJ0Db83p6gVaffnwwOiTVXRkTMp7evSzel38jljfy3ZA9-t9ZpRTuGYIck_ZvIrbGkXMqwE850v-3BYHVazRKb0sTxTEvZ3wIMPGRNvmF5ws4JUv10wHaoKWPtax_IcA" 
+                   alt="MOYA App mobile mood tracking interface"
+                   onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-3 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-3xl text-tertiary\'>sentiment_satisfied</span><span class=\'font-bold text-xs\'>MOYA App</span></div>';">
+            </div>
+            <div class="flex justify-between items-center text-on-surface">
+              <span class="font-label-sm text-label-sm font-bold">MOYA App</span>
+              <span class="font-label-sm text-label-sm text-outline">02 / App</span>
+            </div>
+          </div>
+
+          <!-- Card 3: PyBeginner Web -->
+          <div class="group relative bg-background border border-on-surface rounded-lg p-3 shadow-[2px_2px_0px_#1c1c0d] hover:-translate-y-2 hover:rotate-2 transition-all duration-200 cursor-pointer" onclick="openProjectModal(3)">
+            <div class="absolute -top-3 left-8 w-12 h-5 washi-tape -rotate-3 z-10 border border-outline/30"></div>
+            <div class="aspect-[4/5] bg-surface-container border border-outline-variant rounded overflow-hidden relative mb-2">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2a42H5aIyuGUiPjcqhD9mce4OJgCSfBXg82DBIp796VAJ4NWzZXPUJ8gL2nCrQ8IEKCOyEV9xscYgPr4yAM-DzMbeRAK9Ex9px8DBht03AakwhY8mApihQNixb752bieR8yduiSZJ_lYXU7pEMLTaA2y09pXuYiA_J38DR0_qFv9Xg96s1GOBJw0N9K7-FHdib4PwLRVukyQZ15dDtLN4Rjha912NnXRsyNCTNbHsBqMdAPbZMwrXLswIS1BoBfpA5FjQM475dTPx8w" 
+                   alt="PyBeginner interactive Python learning portal poster"
+                   onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-3 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-3xl text-secondary\'>code</span><span class=\'font-bold text-xs\'>PyBeginner Web</span></div>';">
+            </div>
+            <div class="flex justify-between items-center text-on-surface">
+              <span class="font-label-sm text-label-sm font-bold">PyBeginner Web</span>
+              <span class="font-label-sm text-label-sm text-outline">03 / WEB</span>
+            </div>
+          </div>
+
+          <!-- Card 4: PLFM Media -->
+          <div class="group relative bg-background border border-on-surface rounded-lg p-3 shadow-[2px_2px_0px_#1c1c0d] hover:-translate-y-2 hover:-rotate-2 transition-all duration-200 cursor-pointer" onclick="openProjectModal(4)">
+            <div class="absolute -top-3 right-8 w-12 h-5 washi-tape rotate-6 z-10 border border-outline/30"></div>
+            <div class="aspect-[4/5] bg-surface-container border border-outline-variant rounded overflow-hidden relative mb-2">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjmdbw1368WRdTM9NS6sOKw6ijBV0DMEgEgUzZCNfBzbPqKfHgaN5Q4lKzWwtwQhSc_Gerlt_ReEtgxWke9Tg2SAjgFeWrJmNWYJTJpN4S2UYDUnDHcFhNgPVyfu1k1MHKcoVrkGqnJ0PeEQ9xn9DpwXgk6XTo6DokbGJomB9CKZyyS5QoysQQOZNP3_LdD-_rGrsXboU7QNhecD9-3x78IEQDacj9UY2ktezN72kRaM3zeSQ82b2KTNw9JUui5XI8bLV3zBHqfOijZw" 
+                   alt="PLFM Radio Media Assets & Campaign"
+                   onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-3 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-3xl text-tertiary\'>radio</span><span class=\'font-bold text-xs\'>PLFM Media</span></div>';">
+            </div>
+            <div class="flex justify-between items-center text-on-surface">
+              <span class="font-label-sm text-label-sm font-bold">PLFM Media</span>
+              <span class="font-label-sm text-label-sm text-outline">04 / Brand</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION ABOUT: Tabbed Manila Binder ================= -->
+    <section class="pt-6" id="about">
+      <!-- Top Section Header Note -->
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-widest">/ Dossier 01</span>
+        <div class="h-px bg-outline-variant flex-1"></div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+        <h2 class="font-headline-lg text-3xl sm:text-4xl md:text-headline-lg text-on-surface flex items-center gap-3">
+          About Me
+        </h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          A blend of Business Information Systems rigour, user-centered interface crafting, and community media direction.
+        </p>
+      </div>
+
+      <!-- Binder Outer Sleeve Container -->
+      <div class="relative bg-primary-container rounded-2xl p-3 sm:p-5 border border-on-surface shadow-[4px_4px_0px_#1c1c0d]">
+        
+        <!-- Manila Protruding Folder Tabs (Top Right Edge) -->
+        <div class="flex items-center justify-end gap-1.5 -mt-9 sm:-mt-11 mr-4 z-20 relative">
+          <button class="px-5 py-2 rounded-t-lg border-t border-l border-r border-on-surface bg-surface text-on-surface font-label-md font-bold shadow-[-1px_-1px_0px_#1c1c0d] transition-all cursor-pointer" id="tab-story-btn" onclick="switchAboutTab('story')">
+            📁 My Story
+          </button>
+          <button class="px-5 py-2 rounded-t-lg border-t border-l border-r border-on-surface bg-secondary-container text-on-secondary-fixed font-label-md font-bold transition-all hover:bg-secondary-fixed cursor-pointer" id="tab-tech-btn" onclick="switchAboutTab('tech')">
+            ⚡ Tech Stack &amp; Tools
+          </button>
+        </div>
+
+        <!-- Primary Inner Paper Sheet (Cream Parchment with Left Binder Punches) -->
+        <div class="relative bg-background border border-on-surface rounded-xl p-6 sm:p-10 shadow-inner">
+          
+          <!-- Triple Left Binder Ring Punch Holes -->
+          <div class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 flex flex-col gap-16 pointer-events-none">
+            <div class="binder-ring"></div>
+            <div class="binder-ring"></div>
+            <div class="binder-ring"></div>
+          </div>
+
+          <!-- TAB 1: MY STORY CONTENT -->
+          <div class="pl-6 sm:pl-10 space-y-8 block" id="about-content-story">
+            <div class="flex flex-col lg:flex-row gap-8 items-start">
+              
+              <!-- Left: Photo Card with Washi Tape -->
+              <div class="w-full sm:w-64 flex-shrink-0 relative">
+                <div class="relative bg-surface-container-lowest border border-on-surface p-3 rounded-lg shadow-[3px_3px_0px_#1c1c0d]">
+                  <!-- Diagonal tape on corner -->
+                  <div class="absolute -top-3 -left-3 w-16 h-6 washi-tape -rotate-12 z-10 border border-outline/30"></div>
+                  <div class="aspect-square bg-surface-dim rounded overflow-hidden border border-outline-variant mb-3">
+                    <img class="w-full h-full object-cover" 
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeifJD5I7fzMKtyfNNqLFTbQ6km2rqsaMyJ2R-iD9GRLPx2KaG1lYM8qPpy_9q_I78H-vxaUx8o4CnMMwpQPmbT5qOBAWQeYmNr7U3-cLDciQBHEU8b7OHH9RNTf0BAuOwTdJPHbhbvfI38Fkj-lEhqxmDJmWlqGLfoXeilpel90lITa-S3xY2fgYu3RE5XFzxn1tkgtV0i8MVf_0hOkUKGDwIK7baVjS9JrKKRWetlwumnEGqpjdAkFlTlndmtUHatRNrRcAyYvJ7Ew" 
+                         alt="Adelia Rizki Eka Putri portrait"
+                         onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-4 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-4xl text-primary\'>person</span><span class=\'font-bold text-xs\'>Adelia Rizki</span></div>';">
+                  </div>
+                  <div class="font-label-sm text-label-sm text-center text-on-surface font-bold">
+                    Adelia Rizki Eka Putri
+                  </div>
+                  <div class="font-label-sm text-label-sm text-center text-outline text-[10px]">
+                    Polinema • Malang
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Story Narrative & Education -->
+              <div class="flex-1 space-y-4">
+                <div class="inline-block px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed border border-on-surface font-label-sm font-bold mb-1 shadow-[1px_1px_0px_#1c1c0d]">
+                  Politeknik Negeri Malang • Sistem Informasi Bisnis
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                  Menjembatani analisis fungsional dan estetika antarmuka.
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                  Aku mahasiswa <strong>Sistem Informasi Bisnis di Politeknik Negeri Malang</strong> yang berfokus di bidang <strong>UI/UX design, mobile &amp; web development</strong>, serta <strong>analisis sistem informasi</strong>. Bagiku, desain bukan sekadar visual yang indah di layar, melainkan bagaimana logika alur bisnis yang rumit dapat disajikan menjadi pengalaman pengguna yang tenang, intuitif, dan terstruktur rapi.
+                </p>
+
+                <!-- Experience Highlight Card (PLFM Radio) -->
+                <div class="mt-6 p-4 rounded-lg bg-surface-container-high border border-on-surface shadow-[2px_2px_0px_#1c1c0d] space-y-2">
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="font-label-md text-label-md font-bold text-tertiary flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-base">radio</span>
+                      UKM Radio Kampus PLFM Polinema
+                    </span>
+                    <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-outline">
+                      Staff Divisi Creative Media
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Bertanggung jawab penuh dalam perumusan konsep visual terpadu, desain aset media sosial Instagram, materi promosi siaran, pembuatan brand kit terstandarisasi, serta eksekusi visual campaign edukatif dan interaktif.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: TECH STACK & TOOLS CONTENT -->
+          <div class="pl-6 sm:pl-10 space-y-8 hidden" id="about-content-tech">
+            <div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">
+                Peralatan &amp; Fondasi Arsitektur Digital
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+                Kombinasi perangkat lunak riset interaksi pengguna, framework pemrograman modern, serta sistem manajemen basis data untuk produk siap pakai.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              <!-- Column 1: UI/UX & Design -->
+              <div class="p-4 bg-surface-container-low rounded-lg border border-on-surface shadow-[2px_2px_0px_#1c1c0d] space-y-3">
+                <div class="flex items-center gap-2 border-b border-outline-variant pb-2">
+                  <span class="material-symbols-outlined text-primary">design_services</span>
+                  <h4 class="font-label-lg text-label-lg font-bold">UI/UX &amp; Product</h4>
+                </div>
+                <ul class="space-y-2 font-body-sm text-body-sm">
+                  <li class="flex items-center justify-between">
+                    <span>Figma &amp; FigJam</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Advanced</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Wireframing &amp; Prototyping</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Interactive</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>User Journey Mapping</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Research</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Design Systems &amp; Testing</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Usability</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Column 2: Engineering & Frameworks -->
+              <div class="p-4 bg-surface-container-low rounded-lg border border-on-surface shadow-[2px_2px_0px_#1c1c0d] space-y-3">
+                <div class="flex items-center gap-2 border-b border-outline-variant pb-2">
+                  <span class="material-symbols-outlined text-tertiary">code</span>
+                  <h4 class="font-label-lg text-label-lg font-bold">Development</h4>
+                </div>
+                <ul class="space-y-2 font-body-sm text-body-sm">
+                  <li class="flex items-center justify-between">
+                    <span>Flutter &amp; Dart</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Mobile</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>PHP (Laravel Framework)</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Backend</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Python</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Core Logic</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Odoo ERP Modules</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Enterprise</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Column 3: Database & Workflow -->
+              <div class="p-4 bg-surface-container-low rounded-lg border border-on-surface shadow-[2px_2px_0px_#1c1c0d] space-y-3">
+                <div class="flex items-center gap-2 border-b border-outline-variant pb-2">
+                  <span class="material-symbols-outlined text-secondary">database</span>
+                  <h4 class="font-label-lg text-label-lg font-bold">Data &amp; Workflow</h4>
+                </div>
+                <ul class="space-y-2 font-body-sm text-body-sm">
+                  <li class="flex items-center justify-between">
+                    <span>PostgreSQL &amp; MySQL</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Relational</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Firebase Cloud Store</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">BaaS</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Git &amp; GitHub Teamwork</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Version Ctrl</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Notion &amp; Jira</span>
+                    <span class="font-label-sm text-xs bg-surface px-2 py-0.5 rounded border border-outline-variant">Agile/Scrum</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION PROJECTS: Showcase Binders ================= -->
+    <section class="pt-6" id="projects">
+      <!-- Section Indicator Line -->
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">/ Dossier 02</span>
+        <div class="h-px bg-outline-variant flex-1"></div>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+        <div>
+          <h2 class="font-headline-lg text-3xl sm:text-4xl md:text-headline-lg text-on-surface font-semibold">
+            Projects Archive
+          </h2>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Selected systems, mobile platforms, and visual identity projects.
+          </p>
+        </div>
+
+        <!-- Filter Sub-Tabs -->
+        <div class="flex items-center gap-2">
+          <button class="px-4 py-1.5 rounded-t-lg border border-on-surface bg-secondary-container text-on-secondary-fixed font-label-md font-bold shadow-[1px_1px_0px_#1c1c0d] transition-all cursor-pointer" id="filter-all" onclick="filterProjects('all')">
+            Latest
+          </button>
+          <button class="px-4 py-1.5 rounded-t-lg border border-on-surface bg-surface-container-high text-on-surface font-label-md font-bold hover:bg-surface-variant transition-all cursor-pointer" id="filter-featured" onclick="filterProjects('featured')">
+            Featured
+          </button>
+        </div>
+      </div>
+
+      <!-- Bento Grid of Archival Dossier Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- PROJECT 1: Lab IVVS Information System -->
+        <article class="project-card relative bg-primary-container p-3 sm:p-4 rounded-2xl border border-on-surface shadow-[4px_4px_0px_#1c1c0d] flex flex-col justify-between" data-category="featured">
+          <!-- Folder Tab Tag -->
+          <div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-t bg-secondary-container border-t border-l border-r border-on-surface font-label-sm text-on-secondary-fixed font-bold">
+            CASE STUDY #01
+          </div>
+
+          <div class="bg-background rounded-xl p-5 sm:p-6 border border-on-surface relative h-full flex flex-col justify-between">
+            <!-- Washi tape at corners -->
+            <div class="absolute -top-2 left-6 w-14 h-5 washi-tape -rotate-3 border border-outline/30 pointer-events-none"></div>
+            
+            <div>
+              <!-- Triple binder ring holes along inner edge -->
+              <div class="flex items-center gap-2 mb-4 pb-2 border-b border-outline-variant">
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-bold uppercase tracking-wider">UI/UX DESIGN &amp; SYSTEM</span>
+              </div>
+
+              <!-- Media Preview -->
+              <div class="aspect-video bg-surface-container rounded-lg overflow-hidden border border-outline-variant mb-4 relative group cursor-pointer" onclick="openProjectModal(1)">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOx9WttDXykoQMSzTvUXbW5Gfl53balJK4KvLHNkNDuhjEXiqqTcWP9GiNIUOpWR9awHU9uIgY_aAYrJq5gwo4gf3NWNH0tyaGblbzxLT_CGEQoTXhj1mOCGSW9CvZfq1Q9qfeVNEJUkdGl57srfnlmV9PT3D4DDJgnu73nduSdJAisE9h98bx2DPOG8AMOoFNZVIAy4cRqfa2fhW6GO2do3iLf48QeWC9osrJKVUPIIPxJsQuvXgyNEXNgEvACeH-YPBA0JLnDFLnbA" 
+                     alt="Lab IVVS Information System Blueprint & Wireframe"
+                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-4 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-4xl text-primary\'>schema</span><span class=\'font-bold text-xs\'>Lab IVVS Portal</span></div>';">
+                <div class="absolute bottom-2 right-2 px-2 py-1 bg-surface/90 rounded border border-outline font-label-sm text-[11px] font-bold">
+                  Business Flow • Admin
+                </div>
+              </div>
+
+              <!-- Content & Description -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-baseline flex-wrap gap-2 mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lab IVVS Information System</h3>
+                  <span class="font-label-sm text-label-sm font-bold text-primary flex-shrink-0">System &amp; UI</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Perancangan <em>wireframe</em> dan alur antarmuka sistem informasi Laboratorium IVV untuk memenuhi kebutuhan multi-user (Admin Lab &amp; Kepala Lab). Memfokuskan pada pemetaan alur pendaftaran, <em>dashboard</em> pemantauan, manajemen riwayat, serta kemudahan verifikasi status.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tags & Link -->
+            <div class="pt-5 mt-4 border-t border-outline-variant flex items-center justify-between flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Figma</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Wireframing</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">UI/UX Design</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">User Flow</span>
+              </div>
+              <button class="font-label-sm text-label-sm font-bold text-secondary flex items-center gap-1 hover:underline cursor-pointer" onclick="openProjectModal(1)">
+                Inspect <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: MOYA Mood Tracker -->
+        <article class="project-card relative bg-primary-container p-3 sm:p-4 rounded-2xl border border-on-surface shadow-[4px_4px_0px_#1c1c0d] flex flex-col justify-between" data-category="featured">
+          <div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-t bg-tertiary-container border-t border-l border-r border-on-surface font-label-sm text-on-tertiary-container font-bold">
+            CASE STUDY #02
+          </div>
+
+          <div class="bg-background rounded-xl p-5 sm:p-6 border border-on-surface relative h-full flex flex-col justify-between">
+            <div class="absolute -top-2 right-8 w-14 h-5 washi-tape-maroon rotate-2 border border-outline/30 pointer-events-none"></div>
+            
+            <div>
+              <div class="flex items-center gap-2 mb-4 pb-2 border-b border-outline-variant">
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-bold uppercase tracking-wider">Mobile Healthcare App</span>
+              </div>
+
+              <div class="aspect-video bg-surface-container rounded-lg overflow-hidden border border-outline-variant mb-4 relative group cursor-pointer" onclick="openProjectModal(2)">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnnIiESy1iW2So9OwnjdP1cUmupL9iT2rDc55epiFXUyq421pL6vFrQpzesRe5HuwcsI3tYMkzmRca8HY1d98wNexcumS7dUWYHeZCOq5xwkIXaFH3pJDLcqZ_KN4GO6IjPlMcoueV4K2KdFPxfxqzTvRFfYxVQ2WDArlueZbwyqP361cYjZp--__pmDcRkY3thSxw-XpLdGpx155vfB6f3jjup003TdyHeTdD3mnZ_hSXRaEPrcl9Wh8D4PJ7G2NjgOstcOxU899LBg" 
+                     alt="MOYA Mood tracker mobile app screenshot"
+                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-4 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-4xl text-tertiary\'>mood</span><span class=\'font-bold text-xs\'>MOYA App</span></div>';">
+                <div class="absolute bottom-2 right-2 px-2 py-1 bg-surface/90 rounded border border-outline font-label-sm text-[11px] font-bold">
+                  Flutter • Realtime DB
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex justify-between items-baseline flex-wrap gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">MOYA App</h3>
+                  <span class="font-label-sm text-label-sm font-bold text-tertiary">Mobile Dev</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Aplikasi mobile pelacak suasana hati harian pengguna. Dirancang dengan micro-interactions yang ramah pengguna, integrasi sinkronisasi Firebase cloud, serta rekap statistik kesehatan mental visual.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-5 mt-4 border-t border-outline-variant flex items-center justify-between flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Flutter</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Firebase</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Mobile UI</span>
+              </div>
+              <button class="font-label-sm text-label-sm font-bold text-secondary flex items-center gap-1 hover:underline cursor-pointer" onclick="openProjectModal(2)">
+                Inspect <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: PyBeginner Platform -->
+        <article class="project-card relative bg-primary-container p-3 sm:p-4 rounded-2xl border border-on-surface shadow-[4px_4px_0px_#1c1c0d] flex flex-col justify-between" data-category="latest">
+          <div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-t bg-secondary-fixed border-t border-l border-r border-on-surface font-label-sm text-on-secondary-fixed font-bold">
+            CASE STUDY #03
+          </div>
+
+          <div class="bg-background rounded-xl p-5 sm:p-6 border border-on-surface relative h-full flex flex-col justify-between">
+            <div class="absolute -top-2 left-10 w-14 h-5 washi-tape rotate-1 border border-outline/30 pointer-events-none"></div>
+            
+            <div>
+              <div class="flex items-center gap-2 mb-4 pb-2 border-b border-outline-variant">
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-bold uppercase tracking-wider">Interactive Web Architecture</span>
+              </div>
+
+              <div class="aspect-video bg-surface-container rounded-lg overflow-hidden border border-outline-variant mb-4 relative group cursor-pointer" onclick="openProjectModal(3)">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBqb0dCPcPL_yHuwtPBfQNyj6k801C3eSzuGxWVvNvi9UHDKw-CObYqvOCnnIlu-ome2rqtGcauM4OYQ_8SRT5L_Bt1f-AP0TN7Ribqpz2eE8XrOOeqKNqO6wywOJTBWLmkuEnhZ6HAZ7bjOpmd6feQgbykajFZJ9Ywok5WPWaC-KzHojfNfgnQfn_zeoqjY6lF59qnx7k7F_JFgKy4eoYr7gdXac9tBmK1MKn9ny0QG7zRzxTi5A7ZfFRSUGtTrdGjwlNKLTyenlUoQ" 
+                     alt="PyBeginner interactive Python learning portal"
+                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-4 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-4xl text-primary\'>code</span><span class=\'font-bold text-xs\'>PyBeginner Platform</span></div>';">
+                <div class="absolute bottom-2 right-2 px-2 py-1 bg-surface/90 rounded border border-outline font-label-sm text-[11px] font-bold">
+                  Sprint Backlog • Modular
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex justify-between items-baseline flex-wrap gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">PyBeginner</h3>
+                  <span class="font-label-sm text-label-sm font-bold text-primary">Lead UI/UX &amp; Module Dev</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Platform pembelajaran bahasa Python interaktif berbasis web. Dilengkapi sistem automated evaluation kode, wireframe teruji dengan usability testing, serta sprint backlog terstruktur untuk pemula.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-5 mt-4 border-t border-outline-variant flex items-center justify-between flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Figma</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Python</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">UI/UX</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Web Dev</span>
+              </div>
+              <button class="font-label-sm text-label-sm font-bold text-secondary flex items-center gap-1 hover:underline cursor-pointer" onclick="openProjectModal(3)">
+                Inspect <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: PLFM Radio Visual Assets & Campaign -->
+        <article class="project-card relative bg-primary-container p-3 sm:p-4 rounded-2xl border border-on-surface shadow-[4px_4px_0px_#1c1c0d] flex flex-col justify-between" data-category="latest">
+          <div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-t bg-secondary-container border-t border-l border-r border-on-surface font-label-sm text-on-secondary-fixed font-bold">
+            CASE STUDY #04
+          </div>
+
+          <div class="bg-background rounded-xl p-5 sm:p-6 border border-on-surface relative h-full flex flex-col justify-between">
+            <div class="absolute -top-2 right-12 w-14 h-5 washi-tape -rotate-6 border border-outline/30 pointer-events-none"></div>
+            
+            <div>
+              <div class="flex items-center gap-2 mb-4 pb-2 border-b border-outline-variant">
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-bold uppercase tracking-wider">Brand &amp; Social Media Direction</span>
+              </div>
+
+              <div class="aspect-video bg-surface-container rounded-lg overflow-hidden border border-outline-variant mb-4 relative group cursor-pointer" onclick="openProjectModal(4)">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZckiG1iPhKGmpiSApNvZd46NrLeRfXifIUHm9N9z_tZeXxWyirn08W7a4oRnVQ7dWxHK1EsQeI9iLo3KV6PFZCFb0yna4wdcoXllt2fhC3rm51dxbEs_uYj2VW0E2ToYqJQeTv42q9BcIRrPpt0AR93IwZ0eIK56DMLtpN9vSX5gtjJZyEojGYUm5eiql1eJ2Yah3lokgZ_s9LAZQfoHAeGo-ytUPT0HoqcDtY_-ijU92orPH8NsAWDbT4DpaE0Xzg_YIYnjIfoHBhg" 
+                     alt="PLFM Radio social media posters"
+                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full img-fallback p-4 text-center flex flex-col items-center justify-center gap-2\'><span class=\'material-symbols-outlined text-4xl text-tertiary\'>palette</span><span class=\'font-bold text-xs\'>PLFM Radio Brand</span></div>';">
+                <div class="absolute bottom-2 right-2 px-2 py-1 bg-surface/90 rounded border border-outline font-label-sm text-[11px] font-bold">
+                  Instagram Kit • Branding
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex justify-between items-baseline flex-wrap gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">PLFM Radio Media Assets</h3>
+                  <span class="font-label-sm text-label-sm font-bold text-tertiary">Creative Media &amp; Brand</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Perancangan aset visual promosi <em>event</em> (seperti Open Air &amp; Dies Natalis), konten <em>feeds</em> Instagram interaktif bulanan, twibbon Announcer Competition, serta desain identitas PLFM Original Podcast untuk membangun <em>engagement</em> audiens mahasiswa.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-5 mt-4 border-t border-outline-variant flex items-center justify-between flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Brand Identity</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Graphic Design</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Figma</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] border border-outline-variant">Canva</span>
+              </div>
+              <button class="font-label-sm text-label-sm font-bold text-secondary flex items-center gap-1 hover:underline cursor-pointer" onclick="openProjectModal(4)">
+                Inquire <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION CONTACT: Asymmetric Binder Note ================= -->
+    <section class="pt-6" id="contact">
+      <!-- Indicator label -->
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-widest">/ Dossier 03</span>
+        <div class="h-px bg-outline-variant flex-1"></div>
+      </div>
+
+      <!-- Asymmetric Two-Column Editorial Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Manifesto & Contact Coordinates -->
+        <div class="lg:col-span-5 space-y-6 pt-4">
+          <h2 class="font-display-xl text-4xl sm:text-5xl lg:text-6xl text-on-surface font-headline-lg tracking-tight font-semibold">
+            Let's talk
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed max-w-md">
+            Have a project in mind? Let's make something thoughtful, useful, and worth remembering.
+          </p>
+
+          <div class="pt-6 space-y-5 border-t border-outline-variant font-body-sm text-body-sm">
+            <div>
+              <span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Direct Call / WhatsApp</span>
+              <a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors font-bold inline-flex items-center gap-1.5" href="https://wa.me/628813154922" target="_blank" rel="noopener">
+                +62 881-3154-922
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+            </div>
+
+            <div>
+              <span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Electronic Dispatch (Email)</span>
+              <a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors font-bold underline decoration-secondary" href="mailto:adeliarizkiekaputr@gmail.com">
+                adeliarizkiekaputr@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Station / Location</span>
+              <span class="font-body-md text-body-md text-on-surface block" data-location="Malang, Indonesia">
+                Malang, East Java, Indonesia
+              </span>
+            </div>
+
+            <!-- Social Dossier Links -->
+            <div class="pt-2 flex items-center gap-4">
+              <a class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed border border-on-surface font-label-sm font-bold shadow-[1px_1px_0px_#1c1c0d] hover:brightness-105 transition-all" href="https://www.linkedin.com/in/adelia-rizki-eka-putri-b074b0446/" rel="noopener" target="_blank">
+                <span>LinkedIn</span>
+                <span class="material-symbols-outlined text-xs">open_in_new</span>
+              </a>
+              <a class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-high text-on-surface border border-on-surface font-label-sm font-bold shadow-[1px_1px_0px_#1c1c0d] hover:bg-surface-variant transition-all" href="https://github.com/adeliarztr" rel="noopener" target="_blank">
+                <span>GitHub</span>
+                <span class="material-symbols-outlined text-xs">code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Tactile Binder Note Sheet Form -->
+        <div class="lg:col-span-7">
+          <!-- Outer Sage Green Binder Sleeve Container -->
+          <div class="relative bg-primary-container p-4 sm:p-6 rounded-2xl border border-on-surface shadow-[4px_4px_0px_#1c1c0d]">
+            
+            <!-- Mustard Tab Protruding at Top Edge -->
+            <div class="absolute -top-7 left-8 px-6 py-1.5 rounded-t-lg bg-secondary-container text-on-secondary-fixed font-label-md font-bold border-t border-l border-r border-on-surface shadow-[-1px_-1px_0px_#1c1c0d]">
+              Contact
+            </div>
+
+            <!-- Inner White / Warm Parchment Paper Refill Sheet -->
+            <div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-on-surface shadow-sm">
+              
+              <!-- 4 Punched Binder Rings along the top margin -->
+              <div class="flex justify-between items-center mb-8 px-2 border-b border-outline-variant/50 pb-4">
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+                <div class="binder-ring"></div>
+              </div>
+
+              <!-- Typewriter Ledger Form -->
+              <form class="space-y-6" id="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+                <!-- Name & Phone Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div class="space-y-1">
+                    <label class="font-label-md text-label-md font-bold text-on-surface block" for="contact-name">
+                      Name
+                    </label>
+                    <input class="w-full ledger-input py-2 font-body-md text-body-md text-on-surface placeholder:text-outline-variant" id="contact-name" placeholder="your name" required="" type="text">
+                  </div>
+                  <div class="space-y-1">
+                    <label class="font-label-md text-label-md font-bold text-on-surface block" for="contact-phone">
+                      Phone
+                    </label>
+                    <input class="w-full ledger-input py-2 font-body-md text-body-md text-on-surface placeholder:text-outline-variant" id="contact-phone" placeholder="+62-812-345-678" type="tel">
+                  </div>
+                </div>
+
+                <!-- Email Row -->
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md font-bold text-on-surface block" for="contact-email">
+                    Email
+                  </label>
+                  <input class="w-full ledger-input py-2 font-body-md text-body-md text-on-surface placeholder:text-outline-variant" id="contact-email" placeholder="youremail@example.com" required="" type="email">
+                </div>
+
+                <!-- Message Row -->
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md font-bold text-on-surface block" for="contact-message">
+                    Message
+                  </label>
+                  <textarea class="w-full ledger-input py-2 font-body-md text-body-md text-on-surface placeholder:text-outline-variant resize-none" id="contact-message" placeholder="Tell me what you're working on. Let's make it happen." required="" rows="3"></textarea>
+                </div>
+
+                <!-- Send Inquiry Button Pill styled like Reference 1 -->
+                <div class="pt-4">
+                  <button class="w-full py-3.5 px-6 rounded-full bg-[#96c1db] text-[#1c2c36] hover:bg-[#86b4cf] border border-on-surface font-label-md font-bold shadow-[2px_2px_0px_#1c1c0d] active:translate-y-0.5 active:shadow-none transition-all flex items-center justify-center gap-2 cursor-pointer" id="submit-btn" type="submit">
+                    <span class="material-symbols-outlined text-base">send</span>
+                    <span>Send inquiry</span>
+                  </button>
+
+                  <p class="font-label-sm text-label-sm text-primary text-center mt-3 hidden p-2 bg-primary-fixed/30 border border-primary rounded" id="submit-feedback">
+                    ✓ Inquiry logged into the ledger archive. Adelia will reply shortly.
+                  </p>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= PROJECT INSPECTION MODAL ================= -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay" onclick="if(event.target === this) closeProjectModal()">
+    <div class="relative bg-primary-container p-4 sm:p-6 rounded-2xl border border-on-surface shadow-[6px_6px_0px_#1c1c0d] max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <!-- Manila tab -->
+      <div class="absolute -top-6 left-6 px-4 py-1 rounded-t-lg bg-secondary-container text-on-secondary-fixed font-label-md font-bold border-t border-l border-r border-on-surface">
+        <span id="modal-category">CASE STUDY</span>
+      </div>
+
+      <!-- Close button -->
+      <button onclick="closeProjectModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface border border-on-surface flex items-center justify-center shadow-[1px_1px_0px_#1c1c0d] hover:bg-surface-container font-bold z-10" aria-label="Close modal">
+        ✕
+      </button>
+
+      <!-- Modal Paper Content -->
+      <div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-on-surface space-y-5">
+        <div class="flex items-center gap-2 pb-2 border-b border-outline-variant">
+          <div class="binder-ring"></div>
+          <div class="binder-ring"></div>
+          <span class="font-label-sm text-xs text-outline uppercase font-bold" id="modal-timeline">2025</span>
+        </div>
+
+        <div>
+          <h3 class="font-headline-sm text-2xl font-bold text-on-surface" id="modal-title">Project Title</h3>
+          <p class="font-label-sm text-xs font-bold text-primary mt-1" id="modal-role">Role Description</p>
+        </div>
+
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="modal-description">
+          Project overview description...
+        </p>
+
+        <div class="space-y-2">
+          <h4 class="font-label-md font-bold text-on-surface">Key Deliverables &amp; Focus:</h4>
+          <ul class="font-body-sm text-body-sm text-on-surface space-y-1.5" id="modal-features">
+            <!-- Populated dynamically -->
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-outline-variant flex flex-wrap items-center justify-between gap-4">
+          <div class="flex flex-wrap gap-1.5" id="modal-tags">
+            <!-- Populated dynamically -->
+          </div>
+          <a id="modal-link" href="#" target="_blank" class="px-5 py-2 rounded-full bg-secondary-container text-on-secondary-fixed border border-on-surface font-label-sm font-bold shadow-[2px_2px_0px_#1c1c0d] hover:brightness-105 flex items-center gap-1.5">
+            Visit Project Repository <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= WEB FOOTER (Anchored Shared Component) ================= -->
+  <footer class="docked full-width bottom-0 border-t border-outline-variant bg-surface-container-high">
+    <div class="w-full px-space-md md:px-margin max-w-7xl mx-auto py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-md">
+      <!-- Brand & Ledger Colophon -->
+      <div class="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+        <div class="flex items-center gap-2">
+          <span class="font-label-md text-label-md font-bold text-on-surface">Adelia Rizki Eka Putri</span>
+          <span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Malang, ID</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          © 2025 Adelia Rizki Eka Putri — Business Information Systems &amp; UI/UX. Archival Ledger Edition.
+        </p>
+      </div>
+
+      <!-- Quick Navigation and Social Links -->
+      <div class="flex flex-wrap justify-center items-center gap-6 font-label-sm text-on-surface-variant">
+        <a href="#hero" class="hover:text-on-surface transition-colors">Home</a>
+        <a href="#about" class="hover:text-on-surface transition-colors">About</a>
+        <a href="#projects" class="hover:text-on-surface transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-on-surface transition-colors">Contact</a>
+        <a href="https://github.com/adeliarztr" target="_blank" rel="noopener" class="hover:text-on-surface transition-colors flex items-center gap-1">
+          GitHub <span class="material-symbols-outlined text-xs">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link to External JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
