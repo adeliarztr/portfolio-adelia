@@ -44,20 +44,3 @@ Web Portofolio personal dengan estetika **Archival Binder & Vintage Ledger (Tact
 
 ---
 
-## 📂 Struktur File
-```
-d:/SEMESTER 5/PortofolioWeb/
-├── index.html       # Struktur HTML lengkap, semantik & SEO-friendly
-├── style.css        # Efek kertas taktil, washi tape, binder ring, custom scrollbar
-├── script.js        # Logika tab, filter proyek, modal pop-up, form handler, scrollspy
-└── README.md        # Panduan dokumentasi
-```
-
----
-
-## 💻 Cara Menjalankan
-1. **Langsung**: Cukup buka file `index.html` dengan peramban apa pun (Chrome, Edge, Firefox, Safari).
-2. **Live Server**: Jika menggunakan VS Code atau Antigravity IDE, klik kanan pada `index.html` lalu pilih **Open with Live Server**.
-
----
-
