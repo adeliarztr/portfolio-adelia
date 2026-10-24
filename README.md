@@ -61,29 +61,3 @@ d:/SEMESTER 5/PortofolioWeb/
 
 ---
 
-## 🌐 Cara Deploy Gratis di Vercel
-Ada 2 cara paling mudah dan 100% gratis:
-
-### Cara 1: Lewat GitHub (Rekomendasi Utama)
-1. Buat repositori baru di akun GitHub Anda (misal: `portfolio-adelia`).
-2. Push file proyek ke repositori tersebut:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio commit"
-   git branch -M main
-   git remote add origin https://github.com/<username-github>/portfolio-adelia.git
-   git push -u origin main
-   ```
-3. Buka [vercel.com](https://vercel.com) dan login menggunakan akun GitHub.
-4. Klik tombol **"Add New..."** lalu pilih **"Project"**.
-5. Pilih repositori GitHub Anda dan klik **"Import"**.
-6. Pada kolom *Framework Preset*, biarkan **Other** (karena website statis HTML/CSS).
-7. Klik tombol biru **"Deploy"**. Dalam hitungan detik website akan aktif dengan domain gratis `*.vercel.app`.
-
-### Cara 2: Langsung via Terminal (Vercel CLI)
-Jalankan perintah ini di terminal folder proyek:
-```bash
-npx vercel
-```
-Ikuti instruksi login di peramban, lalu tekan **Enter** pada semua pertanyaan default. Website akan langsung terdeploy ke cloud!
